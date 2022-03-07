@@ -1,0 +1,13 @@
+Directory
+	- With this option you can choose settings for specific directories
+	- For example, you can restrict incoming traffic to view certain directories to come from only certain ip addresses. You can also deny all accesss from incoming traffic so nobody can gain access to it
+	- You can also have a file option in a directory to only allow on certain files in a directory
+
+IfModule
+	- This is kind of like an if else statement
+	- So, whatever is inside the IfModule will only be applied if that particular module specified is available to the server
+	- I think this is mainly to eliminate the chances of having something that just points to a module that doesn't exist causing errors
+
+Proxy
+	- This seems somewhat similar to Virtual Hosts but it only applies to sites accessed through mod_proxy's server that have a specific url
+	- So if you wanted only certain websites to be able to access www.example.com, you would put this in the proxy
